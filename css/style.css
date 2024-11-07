@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Agbalumo', 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    /* background: radial-gradient(944px at 6.9% 46.3%, rgb(254, 192, 193) 0%, rgb(254, 192, 193) 0%, rgb(0, 67, 105) 100.2%); */
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) 96.2%);
+}
+
+.ToDoListApp {
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 25px;
+    background: #fffafa;
+}
+
+.ToDoListApp h1 {
+    color: #ffc0d0;
+    font-size: 64px;
+    display: flex;
+    /* align-items: center; */
+    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.ToDoListApp h1 img {
+    width: 60px;
+    margin-left: 10px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    background: #ffe0e0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+#input-box {
+    flex: 1;
+    /* width: 200px; */
+    /* height: 50px; */
+    border: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+    outline: none;
+    color: #b98a96;
+}
+
+.row button {
+    width: 80px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: #ffc0d0;
+    font-size: 15px;
+    border-radius: 40px;
+    cursor: pointer;
+    color: #fffafa;
+}
+
+.row button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    transition: all 0.2s ease-in;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(/images/Untitled_Artwork_3_copy_2-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(/images/Untitled_Artwork_3_copy_3-removebg-preview.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #ffc0d0;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: rgba(221, 216, 216, 0.4);
+    transition: all 0.2s ease-in;
+}
